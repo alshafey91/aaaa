@@ -1072,15 +1072,6 @@ def bot(op):
                                                                 X.preventedJoinByTicket = True
                                                                 k9.updateGroup(X)
                                                                 cl.sendMessage(op.param1, None, contentMetadata={'mid': op.param2}, contentType=13)
-                                                    except:
-                                                        try:
-                                                            if k10.getGroup(op.param1).preventedJoinByTicket == False:
-                                                                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                                                                    k10.reissueGroupTicket(op.param1)
-                                                                    X = k10.getGroup(op.param1)
-                                                                    X.preventedJoinByTicket = True
-                                                                    k10.updateGroup(X)
-                                                                    cl.sendMessage(op.param1, None, contentMetadata={'mid': op.param2}, contentType=13)
                                                         except:
                                                             pass                                                                   
 #====================================================================                            
