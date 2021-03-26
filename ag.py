@@ -1072,7 +1072,6 @@ def bot(op):
                                                                 X.preventedJoinByTicket = True
                                                                 k9.updateGroup(X)
                                                                 cl.sendMessage(op.param1, None, contentMetadata={'mid': op.param2}, contentType=13)
-                                                        except:
                                                             pass                                                                   
 #====================================================================                            
         if op.type == 13:
